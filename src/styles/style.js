@@ -7,6 +7,7 @@ export const WrapBookPage = styled.div`
     max-width: 150px;
   }
   .addbutton{
+    margin: 20px 0;
     border: 1px solid #1890ff;
     padding: 5px 10px;
     display: inline-block;

@@ -22,9 +22,6 @@ export const MenuContent = () => {
                 Shelves
               </Link>
 
-              <Link to='/shelfinterview' >
-                Shelf with Review
-              </Link>
               <CloseMenu>Close</CloseMenu>
             </WrapTextMenu>
           </Col>

@@ -4,7 +4,6 @@ import {BrowserRouter as Router, Switch, Route, Link} from 'react-router-dom';
 import { MainPage } from "./pages/MainPage";
 import { ViewBookDetails } from "./pages/ViewBookDetails";
 import { Shelf } from "./pages/Shelfs";
-import { ShelfInterview } from "./pages/ShelfInterview";
 import { WrapApplication, lightTheme, darkTheme, WrapSwitcher, Logo, ButtonMenu, Menu, TextRight } from "./components/Theme";
 import imageSun from './images/day.svg';
 import imageMoon from './images/night.svg';
@@ -90,9 +89,11 @@ const App = () => {
               </TextRight>
             </Col>
           </Row>
+
           <Menu className={toggleClass ? 'show' : 'hide'} onClick={menuClicked}>
             <MenuContent/>
           </Menu>
+
           <Switch>
             <Route path="/" exact>
               <MainPage />
@@ -102,9 +103,6 @@ const App = () => {
             </Route>
             <Route path="/shelf">
               <Shelf />
-            </Route>
-            <Route path="/shelfinterview">
-              <ShelfInterview />
             </Route>
           </Switch>
         </WrapApplication>

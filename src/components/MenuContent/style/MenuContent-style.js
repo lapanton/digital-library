@@ -6,6 +6,7 @@ export const WrapTextMenu = styled.div`
   a{
     display: block;
     font-size: 1.5rem;
+    margin-bottom: 20px;
   }
 `;
 

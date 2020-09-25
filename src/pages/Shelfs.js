@@ -27,6 +27,7 @@ export const Shelf = () => {
                  title={<a href={`bookview/${item.id}`} className='border'>{item.title}</a>}
                  description={item.category}
                />
+               {item.review}
               </List.Item>
             )}
           />
@@ -46,6 +47,7 @@ export const Shelf = () => {
              title={<a href={`bookview/${item.id}`} className='border'>{item.title}</a>}
              description={item.category}
            />
+           {item.review}
           </List.Item>
         )}
       />
@@ -65,6 +67,7 @@ export const Shelf = () => {
              title={<a href={`bookview/${item.id}`} className='border'>{item.title}</a>}
              description={item.category}
            />
+           {item.review}
           </List.Item>
         )}
       />
