@@ -18,14 +18,16 @@ export const ViewBookDetails = () => {
 
   const addToShelf = (e) => {
     e.preventDefault();
+    console.log(state);
+    let array = new Array();
+    array[0] = state;
     if (window.localStorage.getItem('storedBook') === null) {
-      window.localStorage.setItem('storedBook', JSON.stringify(state));
+      window.localStorage.setItem('storedBook', JSON.stringify(array));
      return  message.success('Your book has been added to the shelf', 1);
     }
     let storage = JSON.parse(window.localStorage.getItem('storedBook'));
     storage = Array.from(storage);
     const checkExestingBook =  storage.reduce((accumulator, vendor) => (accumulator||vendor.id === state.id), false);
-    console.log('check', checkExestingBook);
     if (!checkExestingBook) {
       storage.push(state);
       message.success('Your book has been added to the shelf', 1);
