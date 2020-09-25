@@ -19,7 +19,7 @@ export const ViewBookDetails = () => {
   const addToShelf = (e) => {
     e.preventDefault();
     console.log(state);
-    let array = new Array();
+    let array = [];
     array[0] = state;
     if (window.localStorage.getItem('storedBook') === null) {
       window.localStorage.setItem('storedBook', JSON.stringify(array));

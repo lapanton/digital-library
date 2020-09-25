@@ -24,6 +24,9 @@ const GlobalStyle = createGlobalStyle`
         padding: 5px 10px;
       }
     }
+    .text-center{
+      text-align: center;
+    }
   }
 `;
 

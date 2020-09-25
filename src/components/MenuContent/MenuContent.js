@@ -15,7 +15,7 @@ export const MenuContent = () => {
           <Col span={24}>
             <WrapTextMenu>
               <Link to="/">
-                Books Lists
+                Books Lists(main page)
               </Link>
 
               <Link to='/shelf' >
